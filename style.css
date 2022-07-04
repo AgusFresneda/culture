@@ -1,0 +1,285 @@
+
+
+body {
+    background-color: #D3BDBA ;
+    
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    font-family: 'PT Sans Caption',"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+
+}
+
+#logo {
+  text-decoration: none;
+  color: white;
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+#logo:hover{
+	color: #A57262;
+}
+	
+#menu-icon {
+  font-family: Geneva, sans-serif;
+  font-size: 6vh;
+}
+	
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 1em;
+	box-sizing: border-box;
+	color: white;
+	background: url(multimedia/Imagen-inicio.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.hero-title {
+	max-width: 16em;
+	margin: 0;
+	font-weight: bold;
+	line-height: .9;
+}
+
+	
+	@media only screen and (min-width: 32em) { .hero-title { font-size: 16vh; } }	
+
+.hero-footer {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.button {
+	padding: .5em .67em;
+	color: white;
+	text-decoration: none;
+	border: .1em solid white;
+
+}
+	
+.button-primary {
+		color: black;
+		background-color: white;
+	}
+	
+article {
+	max-width: 36em;
+	margin: 0 auto;
+	padding: 1em;
+}	
+
+.titulo-principal {
+    font-size: 8vh;
+}
+
+.titulo-inicio {
+    font-size: calc(1.325rem + .9vw);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.textos-inicio {
+    font-size: 28px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.animate__fadeIn{
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+
+/* Secciones */
+
+.logo {
+    font-size: 25px;
+}
+
+.color-nav {
+    background: rgba( 165, 114, 98, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px;
+} 
+
+.footer{
+	background: rgba( 165, 114, 98, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 10px; ;
+}
+
+
+/* Historia */
+
+.color-body-card{
+	background-color: #8b6e68;
+	color: #49231e;
+}
+
+.titulo-card {
+	color: #8C5A4A;
+}
+
+.titulo-card:hover{
+	color: #49231e;
+}
+
+*:focus,
+*:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+	display: inline-flex;
+	list-style: none;
+  }
+
+  .wrapper .icon {
+	position: relative;
+	background: #ffffff;
+	border-radius: 50%;
+	padding: 15px;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .tooltip {
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	background: #ffffff;
+	color: #ffffff;
+	padding: 5px 8px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .tooltip::before {
+	position: absolute;
+	content: "";
+	height: 8px;
+	width: 8px;
+	background: #ffffff;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .wrapper .icon:hover .tooltip {
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+  }
+
+  .wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1DA1F2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+
+.logotipo{
+	text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  animation-name: animacion-logo;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+@keyframes animacion-logo{
+	
+	0%{
+		color: #68332D
+		;
+	}
+
+	20%{
+		color: #8D5F56 ;
+	}
+
+	40%{
+		color: #8C5A4A;
+	}
+
+	60%{
+		color: #A57262;
+	}
+
+    80%{
+		color: #b4a2a0 ;
+	}
+
+	100%{
+		color: #D3BDBA;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	.wrapper{
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
